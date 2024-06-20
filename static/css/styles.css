@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Tiny5";
+    src: url(../Tiny5-Regular.ttf);
+}
+body{
+    font-family: "Tiny5";
+    margin: auto;
+    padding: 1vw;
+    background-image: url(../numback.jpg);
+    background-size: cover;
+}
+p{ 
+    color: blue;
+    font-size: 2vw;
+}
+.feedback{
+    font-size: 1.5vw
+}
+.container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.border{
+    border: 4px rgb(4, 0, 255) solid;
+    margin: auto;
+    width: 30vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    background-color: white;
+}
+.middle{
+    padding-bottom: 1vw;
+    font-size: 1.5vw;
+}
+button{
+    border-radius: 1vw;
+    border: 0.25vw black solid;
+    background-color: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Tiny5";
+}
+button:hover{
+    background-color: rgb(113, 110, 255);
+}
+

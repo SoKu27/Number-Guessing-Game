@@ -1,0 +1,11 @@
+{% extends "index.html" %} {% block content %}
+<div class="middle">
+    {% if feedback %}
+      {{ feedback }}
+    {% endif %}
+</div>
+</form>
+<form action="/return" method="POST">
+<button id="reset">Reset</button>
+</form>
+{% endblock %}

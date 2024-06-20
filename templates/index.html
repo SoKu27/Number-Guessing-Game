@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numguessgame</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="border">
+            <p>NUMBER GUESSING</p>
+            <form action="/play" method="POST">
+                <div class="middle"><label for="guess">Enter a number that's between 1 and a 100:</label></div>
+                <input type="number" id="guess" name="guess">
+                <button id="sub" type="submit">Enter</button>
+                {% block content %}
+                <div class="middle">
+                    {% if error %}
+                        {{ error }}
+                    {% endif %}
+                    {% if notinrange %}
+                        {{ notinrange }}
+                    {% endif %}
+                </div>
+                {% endblock %}
+            </form>
+        </div>
+    </div>
+</body>
+</html>
