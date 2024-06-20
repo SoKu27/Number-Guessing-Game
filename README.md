@@ -1,1 +1,2 @@
 # Number-Guessing-Game
+This is a fun game where the player tries to guess a number that is predetermined by the computer. The player enters guesses and receives feedback: whether their guess is too high or low. Feedback is also given when a guess is entered and it isn't between 1 and 100 and when no guess is entered. I coded this project with python, using the framework flask. As well as HTML and CSS.
